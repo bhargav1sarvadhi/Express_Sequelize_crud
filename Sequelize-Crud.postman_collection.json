@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "04e0938a-1a1c-499e-826f-6d704a50a46e",
+		"name": "Sequelize-Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27852364"
+	},
+	"item": [
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "insertemployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "{{url}}/employee",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "165",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEmployee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/employee/9?first_name=update1&last_name=updatre1&email=update1@gmail.com&phone_number=1978863411",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee",
+								"9"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "update1"
+								},
+								{
+									"key": "last_name",
+									"value": "updatre1"
+								},
+								{
+									"key": "email",
+									"value": "update1@gmail.com"
+								},
+								{
+									"key": "phone_number",
+									"value": "1978863411"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEmployee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/employee/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bulkinsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n        \"first_name\": \"bulk12\",\n        \"last_name\": \"bulk12\",\n        \"email\": \"bulk@gmail.com\",\n        \"phone_number\": \"1878863413\"\n},\n{\n     \"first_name\": \"bulk13\",\n        \"last_name\": \"bulk13\",\n        \"email\": \"bulk13@gmail.com\",\n        \"phone_number\": \"1878483413\"\n},{\n     \"first_name\": \"bulk14\",\n        \"last_name\": \"bulk14\",\n        \"email\": \"bulk14@gmail.com\",\n        \"phone_number\": \"1879483413\"\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/employee/bulk",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee",
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "insertDepartment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n        \"name\": \"test3\",\n        \"type\": \"Non-Tech\"\n},{\n         \"name\": \"test4\",\n         \"type\": \"Non-Tech\"\n},{ \n         \"name\": \"test5\",\n         \"type\": \"Tech\"\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/department",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete/department",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/department/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"department",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update/department",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "tes12",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Tech",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/department/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"department",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Designation",
+			"item": [
+				{
+					"name": "post/designation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/designation",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"designation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete/designation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/designation/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"designation",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete/designation",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/designation/8",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"designation",
+										"8"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-LyHqmebBA2YIxvL99xfsZxCELGc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 Jun 2023 04:42:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": 404,\n    \"success\": false,\n    \"message\": \"Please Check Id : 8\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update/designation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/designation/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"designation",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
