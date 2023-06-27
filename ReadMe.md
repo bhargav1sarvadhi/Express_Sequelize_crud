@@ -12,21 +12,21 @@ This project is a CRUD application built using Express.js, PostgreSQL, and Seque
 
 1. Clone the repository:
 
-   \`\`\`shell
-   git clone <repository-url>
-   \`\`\`
+   ```
+   git clone https://github.com/bhargav1sarvadhi/Express_Sequelize_crud.git
+   ```
 
 2. Navigate to the project directory:
 
-   \`\`\`shell
+   ```shell
    cd Implement Crud Sequelize
-   \`\`\`
+   ```
 
 3. Install the dependencies:
 
-   \`\`\`shell
+   ```
    npm install
-   \`\`\`
+   ```
 
 4. Set up the database:
 
@@ -36,9 +36,9 @@ This project is a CRUD application built using Express.js, PostgreSQL, and Seque
 
 5. Start the application:
 
-   \`\`\`shell
+   ```shell
    npm start
-   \`\`\`
+   ```
 
    The application will be running on \`http://localhost:6500\`.
 
@@ -53,9 +53,9 @@ This project is a CRUD application built using Express.js, PostgreSQL, and Seque
   - Phone Number (must be unique)
 
 - Endpoints:
-  - POST /employee: Create a new employee and also bulk instert this endpoint.
-  - PUT /employee/:id: Update an employee by ID.
-  - DELETE /employee/:id: Delete an employee by ID.
+  - POST /employee:   -- Create a new employee and also bulk instert this endpoint.
+  - PUT /employee/:id  -- Update an employee by ID.
+  - DELETE /employee/:id -- Delete an employee by ID.
 
 ### Department
 
@@ -64,9 +64,9 @@ This project is a CRUD application built using Express.js, PostgreSQL, and Seque
   - Type (Tech or Non-Tech)
 
 - Endpoints:
-  - POST /department: Create a new department and also bulk instert this endpoint.
-  - PUT /department/:id: Update a department by ID.
-  - DELETE /department/:id: Delete a department by ID.
+  - POST /department: --Create a new department and also bulk instert this endpoint.
+  - PUT /department/:id --Update a department by ID.
+  - DELETE /department/:id --Delete a department by ID.
 
 ### Designation
 
@@ -75,8 +75,8 @@ This project is a CRUD application built using Express.js, PostgreSQL, and Seque
 
 - Endpoints:
   - POST /designations: Create a new designation and also bulk instert this endpoint.
-  - PUT /designations/:id: Update a designation by ID.
-  - DELETE /designations/:id: Delete a designation by ID.
+  - PUT /designations/:id -- Update a designation by ID.
+  - DELETE /designations/:id -- Delete a designation by ID.
 
 ### Bulk Insert
 
