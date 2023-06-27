@@ -37,7 +37,7 @@ This project is a CRUD application built using Express.js, PostgreSQL, and Seque
 5. Start the application:
 
    ```shell
-   npm start
+   npm test
    ```
 
    The application will be running on \`http://localhost:6500\`.
